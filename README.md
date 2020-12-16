@@ -1,13 +1,13 @@
 # dhcpd_network_ns
 Docker container for dhcpd serveur using  network name space. Design to work on Cisco Nexus Docker engine
 
-##Docker Hub
+## Docker Hub
 
 Pull the image from Docker Hub:
 
 docker pull pmeffre/dhcpd_network_ns
 
-##Manually
+## Manually
 
 Clone this repository, and run docker build to build an image:
 
@@ -15,7 +15,7 @@ Clone this repository, and run docker build to build an image:
     #cd dhcpd_network_ns
     #docker build .
 
-##How to use
+## How to use
 
     #docker run --net=host -v <dhcpd.conf>:/bootflash/data --name dhcpd_ns <username>/dhcpd <interface> <vrf_name>
 
